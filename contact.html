@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Personal Website</title>
+	<style>
+		#background
+		{
+			width: 1751px;
+			height: 100px;
+  		  	overflow: hidden;
+  		  	margin: auto;
+  			padding: 15px 20px 15px 13px;
+		}
+		#logo
+		{
+			float: left;
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+		#navlinks
+		{
+			overflow: hidden;
+			width: 820px;
+			margin-top: 20px;
+			margin-right: 10px;
+			float: right;
+			border:2px;
+			border-color: #3A3A3A;
+		}
+		#navlinks a
+		{
+			float: left;
+			display: block;
+			color: beige;
+			text-align: center;
+			padding: 14px 35px;
+			text-decoration: none;
+			font-size: 19px;
+			font-family: Century Gothic;
+			border-bottom: 3px solid transparent;
+		}
+		#navlinks a:hover
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#navlinks a.active
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#back1
+		{
+			width: 1780px;
+			height: 820px;
+			margin: -30px auto 0 auto;
+			overflow: hidden;
+			background: #252525;
+		}
+		#blue
+		{
+			width: 850px;
+			height: 820px;
+			float: right;
+			overflow: hidden;
+			background: #0080F9;
+		}
+		#phone 
+		{
+			width: 480px;
+			height: 600px;
+			float: right;
+			margin: 100px 180px 150px 150px;
+			border-radius: 40px;
+			overflow: hidden;
+			background: #FFFFFF;
+			font-family: Arial;
+			color: #0D0D0D;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		#phone h1
+		{
+			text-align: center;
+			color: #0080F9;
+			margin-top: 50px;
+			font-size: 25px;
+		}
+		#content
+		{
+			margin: 25px 70px;
+		}
+		input[type=text]
+		{
+			width: 111%;
+			padding: 20px;
+			margin: 1px 1px 0px -20px;
+			box-sizing: border-box;
+			color:  #0D0D0D;
+			font-size: 16px;
+			font-family: Arial;
+			background: #BDE0FF;
+			border: none;
+			border-radius: 40px;
+		}
+		textarea
+		{
+			width: 111%;
+			height: 200px;
+			margin: 1px 1px 0px -20px;
+			padding: 23px;
+			box-sizing: border-box;
+			color:  #0D0D0D;
+			font-size: 16px;
+			font-family: Arial;
+			background: #BDE0FF;
+			border: none;
+			border-radius: 30px;
+		}
+		#button
+		{
+			width: 1353px;
+			height: 120px;
+			margin-left: auto; 
+  			margin-right: auto;
+			border: 3px solid #FFF;
+			border-top: none;
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+		.button
+		{
+			width: 50%;
+			float: left;
+			margin: 30px 90px 0 90px;
+			padding: 20px 10px 20px 10px;
+			border: none;
+			border-radius: 30px;
+			color:  aliceblue;
+			font-size: 19px;
+			font-family: Arial;
+			background-color: #0080F9;
+			cursor: pointer;
+		}
+		.button:hover
+		{
+			background-color: #002CFF;
+		}
+		.button:active
+		{
+			transform: translateY(4px);
+		}
+		#base
+		{
+			width: 929px;
+			height: 640px;
+			margin-left: 3px;
+			background-color: aliceblue;
+		}
+		#right
+		{
+			width: 540px;
+			float: left;
+			margin-top: 80px;
+			margin-left: 210px;
+			font-family: Arial;
+			color:  #0D0D0D;
+		}
+		#right p 
+		{
+			margin-top: 40px;
+			margin-right: 35px;
+			letter-spacing: 2px;
+			line-height: 25px;
+			text-align: justify;
+		}
+		#pic img
+		{
+			float: left;
+			width: 851px;
+			height: 640px;
+			margin-top: -527px;
+			margin-left: 929px;
+		}
+		#address img
+		{
+			float: left;
+			margin-top: 40px;	
+		}
+		#address p
+		{
+			float: right;
+			margin-right: 30px;
+		}
+		#contact img
+		{
+			float: left;
+			margin-top: 35px;	
+		}
+		#contact p
+		{
+			float: right;
+			margin-top: 17px;
+			margin-right: 343px;
+		}
+		#email img
+		{
+			float: left;
+			margin-top: 35px;	
+		}
+		#email p
+		{
+			float: right;
+			margin-top: 28px;
+			margin-right: 250px;
+		}
+		#footer img
+		{
+			cursor: pointer;
+		}
+		
+	</style>
+</head>
+
+<body bgcolor="#1D1D1D">
+	<div id="background">
+		<div id="logo">
+			<img src="assets/images/logo.png" alt="">
+		</div>
+		<div id="navlinks">
+			<a  href="index.html">HOME</a>
+			<a href="about.html">ABOUT ME</a>
+			<a href="resume.html">RESUME</a>
+			<a href="hobbies.html">HOBBIES</a>
+			<a class="active" href="contact.html">CONTACT</a>
+		</div>
+	</div>
+	<div id="back1">
+		<img src="assets/images/contact.PNG" width="930" height="840" alt=""/>
+	<div id="blue">
+	  <div id="phone">
+				<h1>CONTACT ME</h1>
+				<div id="content">
+					<p><input type="text" placeholder="&nbsp;&nbsp;Your Name"></p>
+					<p><input type="text" placeholder="&nbsp;&nbsp;Your Email"></p>
+					<textarea rows="5" placeholder="&nbsp;&nbsp;Your Message"></textarea><br>
+					<button class="button">Send</button>
+				</div>
+			</div>
+		</div>
+	
+	</div>
+<div id="back">
+	<div id="base">
+		<div id="right">
+			<h1>Get in Touch</h1>
+			<p>Email me with any questions or inquiries or call us. I would be happy to answer your questions and set up a meeting with you. Dualan Personal Website can help set you apart from the flock!</p>
+			<form id="address">
+				<img src="assets/images/address.png" width="38" height="38" alt=""/>
+				<p>94C Scout Tobias St. corner Don Alejandro Roces,<br>Brgy. Obrero, Quezon City</p>
+			</form>
+			<form id="contact">
+				<img src="assets/images/phone.PNG" width="38" height="38" alt=""/>
+				<p>0939–646–3719</p>
+		  	</form>
+			<form id="email">
+				<img src="assets/images/email.PNG" width="38" height="38" alt=""/>
+				<p>dualan.emijen@gmail.com</p>	
+		  	</form>
+		</div>
+			<form id="pic">
+	    		<img src="assets/images/contact1.PNG" width="930" height="820" alt=""/>
+			</form>
+	</div>
+	</div><br><br><br>
+	<div id="footer">
+		<center>
+   	    <img src="assets/images/footer.png" width="13%" alt="">
+		<br><br>
+		<font face="Century Gothic" size="4" color="white">All rights reserved © 2020. Created by EMIJEN DUALAN</font>
+		</center><br><br>
+	</div>
+</body>
+</html>

@@ -1,0 +1,367 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Personal Website</title>
+	<style>
+		#background
+		{
+			width: 1751px;
+			height: 100px;
+  		  	overflow: hidden;
+  		  	margin: auto;
+  			padding: 15px 20px 15px 13px;
+		}
+		#logo
+		{
+			float: left;
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+		#navlinks
+		{
+			overflow: hidden;
+			width: 820px;
+			margin-top: 20px;
+			margin-right: 10px;
+			float: right;
+			border:2px;
+			border-color: #3A3A3A;
+		}
+		#navlinks a
+		{
+			float: left;
+			display: block;
+			color: beige;
+			text-align: center;
+			padding: 14px 35px;
+			text-decoration: none;
+			font-size: 19px;
+			font-family: Century Gothic;
+			border-bottom: 3px solid transparent;
+		}
+		#navlinks a:hover
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#navlinks a.active
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#backpic
+		{
+			height: 310px;
+			margin: -30px 0 auto 2px;
+		}
+		#description
+		{
+			width: 900px;
+			height: 400px;
+  		  	overflow: hidden;
+			background: #F5F5F5 repeat-y;
+			margin-top: -30px;
+			margin-left: auto; 
+  			margin-right: auto;
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+			border-bottom-left-radius: 15px;
+			border-bottom-right-radius: 15px;
+		}
+		#description h1
+		{
+			margin-top: 50px;
+			margin-left: 55px;
+			margin-right: 480px;
+			line-height: auto;
+			text-align: left;
+			font-family: Century Gothic;
+			font-size: 35px;
+			color: #292929;
+		}
+		#description p 
+		{
+			margin-top: 0px;
+			margin-left: 55px;
+			margin-right: 515px;
+			line-height: auto;
+			text-align: left;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: #2E2E2E;
+			text-align: justify;
+		}
+		#description img
+		{
+			float: right;
+		}
+		#desback
+		{
+			width: 1780px;
+			height: 1550px;
+			overflow: hidden;
+			margin: 500px auto 0px auto;
+		}
+		.slider-holder
+        {
+            width: 680px;
+            height: 690px;
+            margin-left: auto;
+            margin-right: 175px;
+            margin-top: -800px;
+            text-align: center;
+            overflow: hidden;
+			float: right;
+        }    
+        .image-holder
+        {
+            width: 680px;
+            height: 690px;
+            clear: both;
+            position: relative;
+            
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }  
+        .slider-image
+        {
+         	float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        } 
+        #slider-image-1:target ~ .image-holder
+        {
+            left: 0px;
+        }
+        #slider-image-2:target ~ .image-holder
+        {
+            left: -680px;
+        }
+        #slider-image-3:target ~ .image-holder
+        {
+            left: -1360px;
+        }
+        #slider-image-4:target ~ .image-holder
+        {
+            left: -2050px;
+        }
+        .button-holder
+        {
+            position: relative;
+            top: -20px;
+        }
+        .slider-change
+        {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            border-radius: 10px;
+            background-color: #032F5A;
+        }
+		#desback h1
+		{
+			margin-top: 330px;
+			margin-left: 180px;
+			text-align: left;
+			font-family: Lora;
+			font-size: 60px;
+			color:aliceblue;
+		}
+		#desback p
+		{
+			width: 1430px;
+			margin-top: 0px;
+			margin-left: 180px;
+			text-align: justify;
+			font-family: Century Gothic;
+			font-size: 18px;
+			line-height: 30px;
+			color:aliceblue;
+		}
+		#content p
+		{
+			width: 700px;
+			margin-left: 180px;
+			text-align: justify;
+			font-family: Century Gothic;
+			font-size: 18px;
+			line-height: 30px;
+			color:aliceblue;
+		}
+		#gallery
+		{
+			width: 1780px;
+			height: 1550px;
+			overflow: hidden;
+			background: #E4E4E4;
+			margin: 0px auto 0px auto;
+		}
+		#gallery h1
+		{
+			margin-top: 100px;
+			line-height: auto;
+			text-align: center;
+			font-family: Lora;
+			font-size: 70px;
+			color: #292929;
+		}
+		#back
+		{
+			width: 1530px;
+			height: 1120px;
+			margin: 50px auto 0 auto;
+			overflow: hidden;
+			border-radius: 20px;
+			background: #F9F9F9;
+		}
+		#back h1
+		{
+			margin-top: 70px;
+			margin-left: 70px;
+			line-height: auto;
+			text-align: left;
+			font-family: Century Gothic;
+			font-size: 30px;
+			color: #292929;
+		}
+		#back p
+		{
+			margin-top: 0px;
+			margin-left: 70px;
+			line-height: auto;
+			text-align: left;
+			font-style: oblique;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #292929;
+		}
+		#back img
+		{
+			margin-top: 30px;
+			margin-left: 70px;
+			width: 1400px;
+			height: 650px;
+			border-radius: 10px;
+		}
+		#pic2 img
+		{
+			margin-left: 70px;
+			width: 338px;
+			height: 155px;
+			float: left;
+			border-radius: 10px;
+		}
+		#pic3 img
+		{
+			margin-left: 15px;
+			width: 338px;
+			height: 155px;
+			float: left;
+			border-radius: 10px;
+		}
+		#pic4 img
+		{
+			margin-left: 15px;
+			width: 338px;
+			height: 155px;
+			float: left;
+			border-radius: 10px;
+		}
+		#pic5 img
+		{
+			margin-left: 15px;
+			width: 338px;
+			height: 155px;
+			float: left;
+			border-radius: 10px;
+		}
+		#footer img
+		{
+			margin-top: 80px;
+			cursor: pointer;
+		}
+		 
+	</style>
+</head>
+
+<body bgcolor="#0D0D0D">
+	<div id="background">
+		<div id="logo">
+			<img src="assets/images/logo.png" alt="">
+		</div>
+	  	<div id="navlinks">
+			<a href="index.html">HOME</a>
+			<a class="active" href="about.html">ABOUT ME</a>
+			<a href="resume.html">RESUME</a>
+			<a href="hobbies.html">HOBBIES</a>
+			<a href="contact.html">CONTACT</a>
+		</div>
+	</div>
+	<div id="container" style="position:relative;">
+		<div id="backpic" style="position: absolute; top: auto; left: auto;">
+	 	  <img src="assets/images/about-me.JPG" width="1781" height="500" alt=""/>
+       	</div>
+		<div id="description" style="position: absolute; top: 305px; left: 452px;">	
+	  	 	<img src="assets/images/about-des.JPG" width="459" height="409" alt=""/>
+			<form>
+	 			<h1><b>"Every great design begins with an even better story."</b><hr width="40%" color="#50AAFF" align="left"></h1><br>
+			  	<p>I’m a BSIT Student from STI College - Quezon Avenue, who loves clean, simple & unique design.</p>
+		  </form>
+	  </div>
+	</div>
+	<div id="desback">
+		<h1>My Background Story</h1><br><br>
+		<p>I am Emijen Dualan, 19 years old. I lived at Infanta in the province of Pangasinan. In that place, I spent my childhood with memories and happy moments. I was born on May 22, 2001 in the town of Iba, Zambales. I grew up in family that simple, full of love and preachment. I am the eldest child among my siblings. <br><br>
+		I was been in touch with my mom, but when I was six years old, she left us because she needs to work in another country.It is a big adjustment and struggles for me. I cried, I feel like I lost my best buddy in my life, but she said to me that, she just do it for us and for are future. My dad stands up as our mother and father. He did everything for us just to make us happy, contented and feel blessed. </p><br>
+		<form id="content">
+		<p>	When I was young, I am a quiet and shy girl. I don't always socialize with other people, so I got bullied when I was in Grade 3. They were laughing at me because of my height and color. But one day, I opened my eyes and saw the reality. I changed myself; I study hard and prove to them that I am not weak. When I was a Grade 6 student, I became more popular, more active in school, and I don't mind all the people said to me in my back. In the same grade, out of 49 students I'm honored as the Top 2 of our class. I feel blessed and I shared the good news to my parents. They were so happy for me, especially my mom.<br><br>
+		In my high school life, I was involved in many school activities beside my academic excellence. Like, when I entered the world of Journalism. I am glad to be part of it and I became the Editor-in-chief for four years. I was the one who layouts and finalized the School Paper of our school, named "The Blare". It was happy and interesting because in that way I enhanced my editing and writing skills. I completed my elementary and four years of high school at the Infanta Integrated School.<br><br>
+		New challenges in my life came, when I was transferred in Quezon City to continue my study in Senior High School and College. For me, it was another big adjustment because I met new friends, teacher, enemies and policies. I currently studying at STI College - Quezon Avenue as a College student of 1st Year with the course of Bachelor of Science in Information Technology. Little by little there some changes happen in my daily life routines and I slowly adjust with it. I studied and work if there are no classes, so I must manage my time well.</p><br><br>
+		<div class="slider-holder">
+        	<span id="slider-image-1"></span>
+        	<span id="slider-image-2"></span>
+        	<span id="slider-image-3"></span>
+			<span id="slider-image-4"></span>
+        	<div class="image-holder">
+			<img src="assets/images/1.jpg" class="slider-image" alt=""/>
+			</div>
+        	<div class="button-holder">
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+			<a href="#slider-image-4" class="slider-change"></a>
+       	 	</div>
+   	 	</div>
+		</form>		
+	</div>
+	<div id="gallery">
+		<h1>Photos</h1>
+		<div id="back">
+			<h1>Quote of the Day!</h1>
+			<p>"Let your past make you BETTER, not Bitter."</p>
+			<img src="assets/images/pic01.JPG" width="897" height="427" alt=""/>
+		 	<form id="pic2">
+	  			<img src="assets/images/pic02.jpg" width="900" height="408" alt=""/>
+		 	</form>
+			<form id="pic3">
+	  			<img src="assets/images/pic03.jpg" width="900" height="408" alt=""/>
+		 	</form>
+			<form id="pic4">
+	  			<img src="assets/images/pic04.jpg" width="900" height="408" alt=""/>
+		 	</form>
+			<form id="pic5">
+	  			<img src="assets/images/pic05.jpg" width="900" height="408" alt=""/>
+		 	</form>
+	   </div>
+	</div>
+	<div id="footer">
+		<center>
+   	    <img src="assets/images/footer.png" width="13%" alt="">
+		<br><br>
+		<font face="Century Gothic" size="4" color="white">All rights reserved © 2020. Created by EMIJEN DUALAN</font>
+		</center><br><br>
+	</div>
+</body>
+</html>

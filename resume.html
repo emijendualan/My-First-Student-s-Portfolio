@@ -1,0 +1,1024 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Personal Website</title>
+	<style>
+		#background
+		{
+			width: 1784px;
+			height: 100px;
+  		  	overflow: hidden;
+  		  	margin: auto;
+  			padding: 15px 20px 15px 13px;
+		}
+		#logo
+		{
+			float: left;
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+		#navlinks
+		{
+			overflow: hidden;
+			width: 820px;
+			margin-top: 20px;
+			margin-right: 10px;
+			float: right;
+			border:2px;
+			border-color: #3A3A3A;
+		}
+		#navlinks a
+		{
+			float: left;
+			display: block;
+			color: beige;
+			text-align: center;
+			padding: 14px 35px;
+			text-decoration: none;
+			font-size: 19px;
+			font-family: Century Gothic;
+			border-bottom: 3px solid transparent;
+		}
+		#navlinks a:hover
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#navlinks a.active
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#top
+		{
+			width: 1530px;
+			height: 85px;
+			margin: 0 auto 0 auto;
+			overflow: hidden;
+			background: #E4E4E4;
+		}
+		#description
+		{
+			width: 1530px;
+			height: 720px;
+  		  	overflow: hidden;
+  		  	margin: 0 auto 0 auto;
+			background: #F5F5F5 repeat-y;
+			margin-left: auto; 
+  			margin-right: auto;
+		}
+		#description h1
+		{
+			margin-top: 80px;
+			margin-left: 625px;
+			margin-right: 70px;
+			line-height: 1px;
+			text-align: left;
+			font-family: Century Gothic;
+			font-size: 60px;
+		}
+		#description h2
+		{
+			margin-top: 0px;
+			margin-left: 625px;
+			margin-right: 100px;
+			line-height: auto;
+			text-align: left;
+			font-family: "Century Gothic";
+			font-size: 25px;
+			color: #2E2E2E;
+			text-align: justify;
+		}
+		#description p 
+		{
+			margin-top: 0px;
+			margin-left: 625px;
+			margin-right: 100px;
+			line-height: auto;
+			text-align: left;
+			font-family: "Century Gothic";
+			font-size: 20px;
+			color: #2E2E2E;
+			text-align: justify;
+		}
+		#description table
+		{
+			width: 750px;
+			margin: auto 0 auto 625px;
+		}
+		#description td
+		{
+			width: 20px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			text-decoration: none;
+			text-decoration-color: black;
+			line-height: 30px;
+		}
+		
+		#description img
+		{
+			float: left;
+			margin-top: 52px;
+			margin-left: 95px;
+			margin-right: 70px;
+		}
+		.button1
+		{
+			width: 28%;
+			float: right;
+			margin: 30px 90px 0 95px;
+			padding: 10px;
+			border: none;
+			border-radius: 30px;
+			color: aliceblue;
+			font-size: 25px;
+			font-family: Century Gothic;
+			background-color: #0080F9;
+			cursor: pointer;
+			float: left;
+		}
+		.button1:hover
+		{
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		.button1:active
+		{
+			transform: translateY(4px);
+		}
+		#skills
+		{
+			width: 1530px;
+			height: 2150px;
+			margin: 0 auto 0 auto;
+			overflow: hidden;
+			background: #E4E4E4;
+		}
+		#myskills table
+		{
+			margin-top: 80px;
+		}
+		#myskills td
+		{	
+			padding: 18px 21px 18px 20px;
+			border: 3px solid;
+			border-color:#222222;
+			text-align: center;
+			color: #222222;
+			font-family: Lora;
+			font-size: 40px;
+			letter-spacing: 5px;
+		}
+		#con-skills
+		{
+			margin-top: 38px;
+			width: 1500px;
+		}
+		#webdev
+		{
+			margin-left: 97px;
+			font-family: Arial;
+			font-size: 30px;
+			color: #3D3D3D;
+			letter-spacing: 1px;
+			float: left;
+		}
+		#webdev h3
+		{
+			font-family: Century Gothic;
+			font-size: 21px;
+			color: #3D3D3D;
+			float: left;
+		}
+		* { box-sizing: border-box}
+		.container
+		{
+			width: 110%;
+			background-color: #FFFFFF;
+		}
+		.skills
+		{
+			text-align:right;
+			font-size: 20px;
+			padding-top: 8px;
+			padding-bottom: 8px;
+			color: aliceblue;
+		}
+		.ms
+		{
+			width: 90%;
+			background-color: #0080F9;
+		}
+		.visual
+		{
+			width: 70%;
+			background-color: #0080F9;
+		}
+		.html
+		{
+			width: 90%;
+			background-color: #0080F9;
+		}
+		.php
+		{
+			width: 65%;
+			background-color: #0080F9;
+		}
+		#webdesign
+		{
+			margin-right: 390px;
+			font-family: Arial;
+			font-size: 30px;
+			color: #3D3D3D;
+			letter-spacing: 1px;
+			float: right;
+		}
+		#webdesign h3
+		{
+			font-family: Century Gothic;
+			font-size: 21px;
+			color: #3D3D3D;
+			float: left;
+		}
+		.container2
+		{ 
+			width: 198%;
+			background-color: #FFFFFF;
+		}
+		.cd
+		{
+			width: 90%;
+			background-color: #0080F9;
+		}
+		.ps
+		{
+			width: 80%;
+			background-color: #0080F9;
+		}
+		.id
+		{
+			width: 60%;
+			background-color: #0080F9;
+		}
+		.pg
+		{
+			width: 75%;
+			background-color: #0080F9;
+		}
+		#myedu table
+		{
+			margin-top: 800px;
+		}
+		#myedu td
+		{	
+			padding: 18px 21px 18px 20px;
+			border: 3px solid;
+			border-color:#222222;
+			text-align: center;
+			color: #222222;
+			font-family: Lora;
+			font-size: 40px;
+			letter-spacing: 5px;
+		}
+		#separator
+		{
+			width: 1px;
+			height: 910px;
+			margin: 40px 90px 0px 760px;
+			border: 8px solid #0080F9;
+			float: left;
+		}
+		#base1
+		{
+			width: 680px;
+			height: 260px;
+			margin: 0px 0px 0px 0px;
+			float: right;
+		}
+		#line1 hr
+		{
+			width: 680px;
+			border-top: 9px solid #0080F9;
+		}
+		#college
+		{
+			width: 580px;
+			height: 260px;
+			margin-top: -9px;
+			padding-top: 10px;
+			background-color: aliceblue;
+		}
+		#college h4
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color:  #0080F9;
+		}
+		#college h1
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 34px;
+			color: #1B1B1B;
+			line-height: 2px;
+		}
+		#college h2
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 28px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#college h3
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 0px;
+		}
+		#college p
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#base2
+		{
+			width: 680px;
+			height: 260px;
+			margin: -110px 90px 0px 0px;
+			float: left;
+		}
+		#line2 hr
+		{
+			width: 690px;
+			border-top: 9px solid #0080F9;
+		}
+		#shs
+		{
+			width: 580px;
+			height: 260px;
+			margin-top: -9px;
+			margin-left: 110px;
+			padding-top: 10px;
+			background-color: aliceblue;
+		}
+		#shs h4
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color:  #0080F9;
+		}
+		#shs h1
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 34px;
+			color: #1B1B1B;
+			line-height: 2px;
+		}
+		#shs h2
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 28px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#shs h3
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 0px;
+		}
+		#shs p
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#base3
+		{
+			width: 680px;
+			height: 260px;
+			margin: -110px 0px 0px 0px;
+			float: right;
+		}
+		#line3 hr
+		{
+			width: 680px;
+			border-top: 9px solid #0080F9;
+		}
+		#jhs
+		{
+			width: 580px;
+			height: 260px;
+			margin-top: -9px;
+			padding-top: 10px;
+			background-color: aliceblue;
+		}
+		#jhs h4
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color:  #0080F9;
+		}
+		#jhs h1
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 34px;
+			color: #1B1B1B;
+			line-height: 2px;
+		}
+		#jhs h2
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 28px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#jhs h3
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 0px;
+		}
+		#jhs p
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#base4
+		{
+			width: 680px;
+			height: 260px;
+			margin: -110px 0px 0px 0px;
+			float: left;
+		}
+		#line4 hr
+		{
+			width: 690px;
+			border-top: 9px solid #0080F9;
+		}
+		#elem1
+		{
+			width: 580px;
+			height: 260px;
+			margin-top: -9px;
+			margin-left: 110px;
+			padding-top: 10px;
+			background-color: aliceblue;
+		}
+		#elem1 h4
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color:  #0080F9;
+		}
+		#elem1 h1
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 34px;
+			color: #1B1B1B;
+			line-height: 2px;
+		}
+		#elem1 h2
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 28px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#elem1 h3
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 0px;
+		}
+		#elem1 p
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#base5
+		{
+			width: 680px;
+			height: 260px;
+			margin: -110px 0px 0px 0px;
+			float: right;
+		}
+		#line5 hr
+		{
+			width: 680px;
+			border-top: 9px solid #0080F9;
+		}
+		#elem2
+		{
+			width: 580px;
+			height: 260px;
+			margin-top: -9px;
+			padding-top: 10px;
+			background-color: aliceblue;
+		}
+		#elem2 h4
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color:  #0080F9;
+		}
+		#elem2 h1
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 34px;
+			color: #1B1B1B;
+			line-height: 2px;
+		}
+		#elem2 h2
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 28px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#elem2 h3
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 0px;
+		}
+		#elem2 p
+		{
+			margin-left: 30px;
+			font-family: Century Gothic;
+			font-size: 20px;
+			color: #1B1B1B;
+			line-height: 30px;
+		}
+		#achieve
+		{
+			width: 1530px;
+			height: 1230px;
+			margin: 0px auto 0 auto;
+			overflow: hidden;
+			background: #0080F9;
+		}
+		#myachieve table
+		{
+			margin-top: 80px;
+		}
+		#myachieve td
+		{	
+			padding: 18px 21px 18px 20px;
+			border: 3px solid;
+			border-color:aliceblue;
+			text-align: center;
+			color: aliceblue;
+			font-family: Lora;
+			font-size: 40px;
+			letter-spacing: 5px;
+		}
+		#list
+		{
+			width: 1160px;
+			margin-top: 30px;
+			margin-left: 190px;
+		}
+		#firstline
+		{
+			margin-left: 20px;
+		}
+		#firstline p 
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			font-size: 20px;
+			margin-top: 250px;	
+		}
+		.button
+		{
+			width: 350px;
+			height: 400px;
+			float: left;
+			margin: 20px 20px 30px 5px;
+			border: none;
+			border-radius: 15px;
+			color: #131313;
+			background-color: #0080F9;
+			cursor: pointer;
+		}
+		.button:hover
+		{
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			background-color: aliceblue;
+			color: black;
+		}
+		#secondline
+		{
+			margin-left: 20px;
+		}
+		#secondline p 
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			font-size: 20px;
+			margin-top: 250px;	
+		}
+		#sec img
+		{
+			width: 280px;
+			height: 200px;
+			float: left;
+			margin-left: 30px;
+			border: none;
+			border-radius: 15px;
+		}
+		#pres img
+		{
+			width: 280px;
+			height: 200px;
+			float: left;
+			margin-left: 30px;
+			border: none;
+			border-radius: 15px;
+		}
+		#train img
+		{
+			width: 280px;
+			height: 200px;
+			float: left;
+			margin-left: 30px;
+			border: none;
+			border-radius: 15px;
+		}
+		#encode img
+		{
+			width: 280px;
+			height: 200px;
+			float: left;
+			margin-left: 30px;
+			border: none;
+			border-radius: 15px;
+		}
+		#collab img
+		{
+			width: 280px;
+			height: 200px;
+			float: left;
+			margin-left: 30px;
+			border: none;
+			border-radius: 15px;
+		}
+		#layout img
+		{
+			width: 280px;
+			height: 200px;
+			float: left;
+			margin-left: 30px;
+			border: none;
+			border-radius: 15px;
+		}
+		#refer
+		{
+			width: 1530px;
+			height: 800px;
+			margin: 0px auto 0 127px;
+			overflow: hidden;
+			background: #F5F5F5;
+			float: left;
+		}
+		#references table
+		{
+			margin-top: 80px;
+		}
+		#references td
+		{	
+			padding: 18px 21px 18px 20px;
+			border: 3px solid;
+			border-color:#131313;
+			text-align: center;
+			color: #131313;
+			font-family: Lora;
+			font-size: 40px;
+			letter-spacing: 5px;
+		}
+		#pic img
+		{
+			float: right;
+			border-radius: 30px;
+			width: 320px;
+			height: 450px;
+			float: right;
+			margin: 50px 290px 90px 90px;
+			border: none;
+			border-radius: 30px;
+			color: #131313;
+			cursor: pointer;
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+		}
+		#name
+		{
+			margin: 180px 40px 50px 270px;
+			font-family: Century Gothic;
+			float: left;	
+		}
+		#name h1 
+		{
+			font-size: 38px;
+		}
+		#name p 
+		{
+			font-size: 20px;
+		}
+		#down
+		{
+			width: 1530px;
+			height: 85px;
+			margin: 0 auto 0 auto;
+			overflow: hidden;
+			background: #E4E4E4;
+		}
+		#footer img
+		{
+			margin-top: 80px;
+			margin-right: 97px;
+			margin-left: 100px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body bgcolor="#1D1D1D">
+	<div id="background">
+		<div id="logo">
+			<img src="assets/images/logo.png" alt="">
+		</div>
+	  	<div id="navlinks">
+			<a href="index.html">HOME</a>
+			<a  href="about.html">ABOUT ME</a>
+			<a class="active" href="resume.html">RESUME</a>
+			<a href="hobbies.html">HOBBIES</a>
+			<a href="contact.html">CONTACT</a>
+		</div>
+	</div>
+	<div id="top">
+		&nbsp;
+	</div>
+	<div id="description">
+		  <img src="assets/images/resume pic01.jpg" width="428" height="503" alt=""/>
+			<form>
+				<h1>EMIJEN M. DUALAN</h1><br><br>
+				<h2>CAREER OBJECTIVE</h2>
+				<p>To secure an On-the-Job-Training position in your company for me to enhance and share my knowledge in the field of Information Technology (IT) as well as to develop my personality as a future IT developer.</p>
+				<table>
+					<tr>
+						<td>Age:</td>
+						<td>19</td>
+					</tr>
+					<tr>
+						<td>Birthday:</td>
+						<td>May 22, 2001</td>
+					</tr>
+					<tr>
+						<td>Nationality:</td>
+						<td>Filipino</td>
+					</tr>
+					<tr>
+						<td>Address:</td>
+						<td>94C Scout Tobias St. corner Don Alejandro Roces, Brgy. Obrero, Quezon City</td>
+					</tr>
+					<tr>
+						<td>Phone:</td>
+						<td>0939–646–3719</td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td>dualan.emijen@gmail.com </td>
+					</tr>
+				</table>	
+			</form><br><br><br>
+			<button class="button1">HIRE ME</button>	
+	</div>
+	<div id="skills">
+		<form id="myskills">
+			<center>
+			<table>
+				<td>MY SKILLS</td>
+			</table>
+			</center>
+		</form>
+		<div id="con-skills">
+		<form id="webdev">
+			<p><b>WEB DEVELOPMENT SKILLS</b></p>
+			<h3>MICROSOFT OFFICE (MS Word, PowerPoint and Excel)</h3><br><br>
+			<div class="container">
+				<div class="skills ms">90%</div>
+			</div><br>
+			<h3>C# & VISUAL BASIC</h3><br><br>
+			<div class="container">
+				<div class="skills visual">70%</div>
+			</div><br>
+			<h3>HTML & CSS</h3><br><br>
+			<div class="container">
+				<div class="skills html">90%</div>
+			</div><br>
+			<h3>PHP & MYSQL</h3><br><br>
+			<div class="container">
+				<div class="skills php">65%</div>
+			</div><br>
+		</form>
+		<form id="webdesign">
+			<p><b>WEB DESIGN SKILLS</b></p>
+			<h3>CREATIVE DESIGN</h3><br><br>
+			<div class="container2">
+				<div class="skills cd">90%</div>
+			</div><br>
+			<h3>PHOTOSHOP</h3><br><br>
+			<div class="container2">
+				<div class="skills ps">80%</div>
+			</div><br>
+			<h3>INDESIGN</h3><br><br>
+			<div class="container2">
+				<div class="skills id">60%</div>
+			</div><br>
+			<h3>PHOTOGRAPHY</h3><br><br>
+			<div class="container2">
+				<div class="skills pg">75%</div>
+			</div><br>
+		</form>
+	</div>
+		<div id="myedu">
+			<center>
+			<table>
+				<td>EDUCATION</td>
+			</table>
+			</center>
+		</div><br><br>
+		<div id="separator">
+			<table><td>&nbsp;</td></table>
+ 		<div id="base1">
+			<div id="line1">
+				<hr align="left" style="margin-top: 0px;">
+			</div>
+			<div id="college">
+				<h4>2019-Present</h4>
+				<h1>College</h1>
+				<h2>STI College - Quezon Avenue</h2>
+				<h3>133 Quezon Avenue, Quezon City</h3>
+				<p>Bachelor of Science in Information Technology</p>
+			</div>
+		</div>
+		<div id="base2">
+			<div id="line2">
+				<hr align="left" style="margin-top: 0px;">
+			</div>
+			<div id="shs">
+				<h4>2017-2019</h4>
+				<h1>Senior High School</h1>
+				<h2>STI College - Quezon Avenue</h2>
+				<h3>133 Quezon Avenue, Quezon City</h3>
+				<p>IT - Mobile App and Web Development</p>
+			</div>
+		</div>
+		<div id="base3">
+			<div id="line3">
+				<hr align="left" style="margin-top: 0px;">
+			</div>
+			<div id="jhs">
+				<h4>2013-2017</h4>
+				<h1>Junior High School</h1>
+				<h2>Infanta Integrated School</h2>
+				<h3>Poblacion, Infanta, Pangasinan</h3>
+			</div>
+		</div>
+		<div id="base4">
+			<div id="line4">
+				<hr align="left" style="margin-top: 0px;">
+			</div>
+			<div id="elem1">
+				<h4>2009-2013</h4>
+				<h1>Elementary School</h1>
+				<h2>Infanta Integrated School</h2>
+				<h3>Poblacion, Infanta, Pangasinan</h3>
+			</div>
+		</div>
+		<div id="base5">
+			<div id="line5">
+				<hr align="left" style="margin-top: 0px;">
+			</div>
+			<div id="elem2">
+				<h4>2006-2009</h4>
+				<h1>Elementary School</h1>
+				<h2>St. John Learning Center</h2>
+				<h3>Poblacion, Infanta, Pangasinan</h3>
+			</div>
+		</div>
+		</div><br><br>
+	</div>
+	<div id="achieve">
+		<div id="myachieve">
+			<center>
+			<table>
+				<td>ACHIEVEMENTS / RESPONSIBILITIES</td>
+			</table>
+			</center>
+		</div><br><br>
+		<div id="list">
+			<div id="firstline">
+				<div id="sec">
+					<button class="button">
+						<img src="assets/images/a01.JPG" width="280" height="200" alt=""/>
+					<p>Secretary,<br> ELITES<br>(2019 - 2020) </p>
+				</button>			    	
+		  	</div>
+				<div id="pres">
+					<button class="button">
+						<img src="assets/images/a02.JPG" width="280" height="200" alt=""/>
+						<p>President,<br> Homeroom<br>(2017 - 2018)</p></button>
+				</div>
+				<div id="train">
+					<button class="button">
+						<img src="assets/images/a03.JPG" width="280" height="200" alt=""/>
+						<p>Accounting Trainee,<br>STI College – Quezon Avenue<br>(2018 - 2019) </p>
+					</button>
+				</div>
+			</div>
+			<div id="secondline">
+				<div id="encode">
+					<button class="button">
+						<img src="assets/images/a04.jpg" width="280" height="200" alt=""/>
+						<p>5th Place Division Level,<br>Basic Encoding<br>(2013)</p></button>
+					</div>
+				<div id="collab">
+					<button class="button">
+						<img src="assets/images/a05.jpg" width="280" height="200" alt=""/>
+						<p>3rd Place Division Level, Collaborative Publishing Contest<br>(2015) </p>
+				  </button>
+				</div>
+				<div id="layout">
+					<button class="button">
+						<img src="assets/images/a06.jpg" width="280" height="200" alt=""/>
+						<p>Lay-out Artist,<br>The Cream & The Blare Schoolpaper (2013 - 2017) </p></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="refer">
+		<div id="references">
+			<center>
+			<table>
+				<td>CHARACTER &nbsp;REFERENCE</td>
+			</table>
+			</center>
+		</div><br>
+		<center>
+		<div id="pic">
+  			<img src="assets/images/sir neil.jpg" width="315" height="450" alt=""/>
+		</div>
+  		<div id="name">
+			<h1>NEIL MARTIN S. MARANETA</h1>
+			<p>Academic Head <br>STI College - Quezon Avenue</p>
+			<p>Contact Number: 0998-761-2323</p>
+		</div>
+		</center>
+	</div>
+	<div id="down">
+		&nbsp;
+	</div>
+	<div id="footer">
+		<center>
+   	    	<img src="assets/images/footer.png" width="13%" alt="">
+			<br><br>
+			<font face="Century Gothic" size="4" color="white">All rights reserved © 2020. Created by EMIJEN DUALAN</font>
+		</center><br><br>
+	</div>
+</body>
+</html>

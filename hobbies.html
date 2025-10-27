@@ -1,0 +1,445 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Personal Website</title>
+	<style>
+		#background
+		{
+			width: 1751px;
+			height: 100px;
+  		  	overflow: hidden;
+  		  	margin: auto;
+  			padding: 15px 20px 15px 13px;
+		}
+		#logo
+		{
+			float: left;
+			margin-top: 30px;
+			margin-left: 80px;
+		}
+		#navlinks
+		{
+			overflow: hidden;
+			width: 820px;
+			margin-top: 20px;
+			margin-right: 10px;
+			float: right;
+			border:2px;
+			border-color: #3A3A3A;
+		}
+		#navlinks a
+		{
+			float: left;
+			display: block;
+			color: beige;
+			text-align: center;
+			padding: 14px 35px;
+			text-decoration: none;
+			font-size: 19px;
+			font-family: Century Gothic;
+			border-bottom: 3px solid transparent;
+		}
+		#navlinks a:hover
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#navlinks a.active
+		{
+			border-bottom: 3px solid #50AAFF;
+		}
+		#back
+		{
+			width: 1780px;
+			height: 2300px;
+			margin: -30px auto 0 auto;
+			overflow: hidden;
+			background-image: url("assets/images/bg1.JPG");
+		}
+		#hobbies h1
+		{
+			text-align: center;
+			color: aliceblue;
+			font-family: Lora;
+			font-size: 60px;
+			margin-top: 60px;
+		}
+		#hobbies p
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			color: aliceblue;
+			font-size: 20px;
+			margin-top: -30px;
+		}
+		#list
+		{
+			width: 1160px;
+			margin-top: 50px;
+		}
+		#firstline
+		{
+			margin-left: 25px;
+		}
+		#firstline p 
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			font-size: 25px;
+			margin-top: 250px;	
+		}
+		.button
+		{
+			width: 350px;
+			height: 345px;
+			float: left;
+			margin: 20px 20px 30px 5px;
+			border: none;
+			border-radius: 15px;
+			color: #131313;
+			background-color: aliceblue;
+			cursor: pointer;
+		}
+		.button:hover
+		{
+			box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+			background-color: #50AAFF;
+			color: aliceblue;
+		}
+		.button:active
+		{
+			transform: translateY(4px);
+		}
+		#secondline
+		{
+			margin-left: 25px;
+		}
+		#secondline p 
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			font-size: 25px;
+			margin-top: 250px;		
+		}
+		#thirdline
+		{
+			margin-left: 25px;
+		}
+		#thirdline p
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			font-size: 25px;
+			margin-top: 250px;	
+		}
+		#fourthline
+		{
+			margin-left: 25px;
+		}
+		#fourthline p
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			font-size: 25px;
+			margin-top: 250px;
+		}
+		#fifthline
+		{
+			margin-left: 25px;
+		}
+		#fifthline p
+		{
+			text-align: center;
+			font-family: Century Gothic;
+			font-size: 25px;
+			margin-top: 250px;
+		}
+		#clean img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#cook img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#dance img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#drawing img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#eat img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#explore img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#family img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#garden img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#music img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#photography img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#board img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#badminton img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#study img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#video img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#movie img
+		{
+			width: 210px;
+			height: 200px;
+			float: left;
+			margin-top: 15px;
+			margin-left: 63px;
+			border: 5px solid aliceblue;
+			border-radius: 120px;
+		}
+		#footer img
+		{
+			margin-top: 80px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body bgcolor="#1D1D1D">
+	<div id="background">
+		<div id="logo">
+			<img src="assets/images/logo.png" alt="">
+		</div>
+		<div id="navlinks">
+			<a href="index.html">HOME</a>
+			<a href="about.html">ABOUT ME</a>
+			<a href="resume.html">RESUME</a>
+			<a class="active" href="hobbies.html">HOBBIES</a>
+			<a href="contact.html">CONTACT</a>
+		</div>
+	</div>
+	<div id="back">
+	<div id="hobbies">
+		<h1>MY HOBBIES</h1>
+		<p>Here are the list of my hobbies:</p><hr width="10%" color="#50AAFF" >
+	</div>
+	<center>
+	<div id="list">
+		<div id="firstline">
+			<div id="clean">
+				<button class="button">
+					<img src="assets/images/01.PNG" width="350" height="345" alt=""/>
+					<p>CLEANING</p>
+				</button>
+			</div>
+			<div id="cook">
+				<button class="button">
+					<img src="assets/images/02.PNG" width="350" height="345" alt=""/>
+					<p>COOKING</p>
+				</button>
+			</div>
+			<div id="dance">
+				<button class="button">
+					<img src="assets/images/03.PNG" width="350" height="345" alt=""/>
+					<p>DANCING</p>
+				</button>
+			</div>
+		</div>
+		<div id="secondline">
+			<div id="drawing">
+				<button class="button">
+					<img src="assets/images/04.PNG" width="350" height="345" alt=""/>
+					<p>DRAWING</p>
+				</button>
+			</div>
+			<div id="eat">
+				<button class="button">
+					<img src="assets/images/05.PNG" width="350" height="345" alt=""/>
+					<p>EATING</p>
+				</button>
+			</div>
+			<div id="explore">
+				<button class="button">
+					<img src="assets/images/06.PNG" width="350" height="345" alt=""/>
+					<p>EXPLORING</p>
+				</button>
+			</div>
+		</div>
+		<div id="thirdline">
+			<div id="family">
+				<button class="button">
+					<img src="assets/images/07.PNG" width="350" height="345" alt=""/>
+					<p>FAMILY BONDING</p>
+				</button>
+			</div>
+			<div id="garden">
+				<button class="button">
+					<img src="assets/images/08.PNG" width="350" height="345" alt=""/>
+					<p>GARDENING</p>
+				</button>
+			</div>
+			<div id="music">
+				<button class="button">
+					<img src="assets/images/09.PNG" width="350" height="345" alt=""/>
+					<p>LISTENING TO MUSIC</p>
+				</button>
+			</div>
+		</div>
+		<div id="fourthline">
+			<div id="photography">
+				<button class="button">
+					<img src="assets/images/10.PNG" width="350" height="345" alt=""/>
+					<p>PHOTOGRAPHY</p>
+				</button>
+			</div>
+			<div id="board">
+				<button class="button">
+					<img src="assets/images/11.PNG" width="350" height="345" alt=""/>
+					<p>PLAYING BOARD GAMES</p>
+				</button>
+			</div>
+			<div id="badminton">
+				<button class="button">
+					<img src="assets/images/12.PNG" width="350" height="345" alt=""/>
+					<p>PLAYING BADMINTON</p>
+				</button>
+			</div>
+		</div>
+		<div id="fifthline">
+			<div id="study">
+				<button class="button">
+					<img src="assets/images/13.PNG" width="350" height="345" alt=""/>
+					<p>STUDYING</p>
+				</button>
+			</div>
+			<div id="video">
+				<button class="button">
+					<img src="assets/images/14.PNG" width="350" height="345" alt=""/>
+					<p>VIDEO EDITING</p>
+				</button>
+			</div>
+			<div id="movie">
+				<button class="button">
+					<img src="assets/images/15.PNG" width="350" height="345" alt=""/>
+					<p>WATCHING MOVIES</p>
+				</button>
+			</div>	
+		</div>
+	</div>
+	</center>
+	</div>
+	<div id="footer">
+		<center>
+   	    	<img src="assets/images/footer.png" width="13%" alt="">
+			<br><br>
+			<font face="Century Gothic" size="4" color="white">All rights reserved © 2020. Created by EMIJEN DUALAN</font>
+		</center><br><br>
+	</div>
+</body>
+</html>
